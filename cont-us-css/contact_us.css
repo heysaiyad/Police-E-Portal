@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+/* nunito */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Rubik:ital,wght@0,400;0,700;1,700&display=swap');
+/* rubik */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+:root{
+    --blue:#287bff;
+    --white:#fff;
+    --grey:#f5f5f5;
+    --black1:#222;
+    --black2:#999;
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+
+
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a{
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+
+.active{
+    color: #f47514 !important;
+}
+
+.goa{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+/* header */
+header{
+    z-index: 1;
+    position: relative;
+    padding-top: 20px;
+}
+.nav-col{
+    float: left;
+    width: 75%;
+}
+
+.log{
+    float: right;
+    text-align: right;
+    width: 25%;
+}
+
+.logo{
+    float: left;
+    width: 30%;
+    font-family: 'Pacifico', cursive;
+    color: red;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.menu{
+    float: right;
+    width: 70%;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 22px;
+    display: inline-block;
+    color: #4d4d4d;
+    
+}
+
+.menu a:hover{
+    color: #f47514;
+    transition: all 5.5s ease;
+}
+
+
+
+
+
+.log a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 23px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    background: #f47514;
+    padding: 10px;
+    width: 130px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.log a:hover{
+    background:orangered;
+}
+
+section.header-bg-parent{
+    position: relative;
+    top: -83px;
+    
+}
+
+.header-col1{
+    float: left;
+    width: 45%;
+    position: absolute;
+    top: 36%;
+    left: 14%;
+}
+
+.header-col2{
+    float: right;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(/home_img/bgimg.jpg);
+    /* background-image: url("bgimg.jpg"); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    margin-bottom: -73px;
+    /* extra dala not mind */
+    width: 100%;
+
+}
+
+.header-col1 h5{
+    color: #f47514;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Nunito';
+}
+.header-col1 h2{
+    color: #53c507;
+    font-size: 40px;
+    line-height: 43px;
+    margin: 21px 0px 15px;
+    font-family: 'Nunito';
+}
+
+.header-col1 p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px 0px opx;
+    color: white;
+    font-family: 'Nunito';
+}
+
+
+
+
+
+.header-col1 a{
+    
+    text-decoration: none;
+    background: linear-gradient(90deg, #8b81ef, #6759e8);
+    padding: 5px 23px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 20px 0px;
+}
+
+.header-col1 a:hover{
+    background: linear-gradient(180deg,  #6759e8,#8b81ef);
+}
+
+/*--------------------------- content section--------------------------- */
+
+.container-contact{
+  
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 17px;
+  }
+  
+  
+  .container-contact .content{
+    
+    position: relative;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+    margin-right: 7rem;
+    margin-left: 7rem;
+    
+  }
+  
+  
+  .container-contact  .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  
+  /* YE JO LEFT SIDE KE BAD JO EK LINE HAI USKE LIYE USE KIYA HU*/
+  .content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%); 
+    background: #3030cc;
+  }
+  
+  
+  .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  
+  
+  .content .left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+  }
+  
+  
+  .content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+  }
+  
+  
+  .container-contact  .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+  }
+  
+  
+  .content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+  }
+  
+  
+  .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  
+  
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    
+  }
+  
+  
+  .right-side .message-box{
+    min-height: 33px;
+  }
+  
+  
+  .right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  
+  
+  .right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  
+  
+  .right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button input[type="button"]:hover{
+    background: #5029bc;
+  }
+  
+  /*SCREEN KE ACCORDING ARJEST HO JAYE ISILIYE USE KIYA*/
+  @media (max-width: 950px) {
+    .container-contact {
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+  
+  
+    .container-contact  .content .right-side{
+     width: 75%;
+     margin-left: 55px;
+  }
+  }
+  /*SCREEN KE ACCORDING ARJEST HO JAYE ISILIYE USE KIYA*/
+  @media (max-width: 820px) { 
+    .container{
+      margin: 40px 0;
+      height: 100%;
+    } 
+  
+  
+    .container-contact  .content{
+      flex-direction: column-reverse;
+    }
+  
+  
+   .container-contact  .content .left-side{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+  
+  
+   .container-contact  .content .left-side::before{
+     display: none;
+   }
+  
+  
+   .container-contact  .content .right-side{
+     width: 100%;
+     margin-left: 0;
+   }
+  
+  
+  }
+  
+  label,
+  textarea {
+      font-size: .8rem;
+      letter-spacing: 1px;
+  }
+  
+  
+  textarea {
+      padding: 10px;
+      max-width: 100%;
+      line-height: 1.5;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-shadow: 1px 1px 1px #999;
+  }
+  
+  label {
+      display: block;
+      margin-bottom: 10px;
+  }
+  
+
+/* --------footer section---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container-footer{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.line{
+	font-size: 14px;
+	color: #7c7a7a;
+}
+#email{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: blue;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #0e1238;
+    /* padding: 70px 0; */
+	padding: 30px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.visit{
+	text-align: center;
+	margin-top: 40px;
+	color: cornsilk;
+}
+
+.footer_bottom{
+    background-color: #191f4d;
+    float: left;
+    display: inline;
+    width: 100%;
+    padding: 10px 30px;
+    color: #ccc;
+}
+.footer_bottom .copyright{
+    display: inline-block;
+    margin-left: 2%;
+    color: white;
+}
+
+.footer_bottom .developer{
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 55%;
+    color: white;
+   
+}
+
+.footer_bottom .developer a,
+.footer_bottom .copyright a{
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
